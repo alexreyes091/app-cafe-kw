@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+    background-color: v.$bg-primario;
+    padding: 8rem;
+    &__parrafo {
+        color: v.$bg-blanco;
+        line-height: 2;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    &__copyright {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: v.$bg-secundario;
+    }
+
+}

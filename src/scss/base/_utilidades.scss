@@ -1,0 +1,13 @@
+@use 'variables' as v; 
+
+.text-center {
+    text-align: center;
+}
+
+.text-titulo {
+    font-family: v.$font-titulo;
+}
+
+.bg-primario {
+    background-color: v.$bg-primario;
+}

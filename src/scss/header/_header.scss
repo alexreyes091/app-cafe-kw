@@ -1,0 +1,55 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    background-color: v.$bg-primario;
+    background-size: 20rem;
+    padding-top: 1rem;
+
+    @include m.desktop {
+        padding-top: 2rem;
+    }
+
+    @include m.tablet {
+        background-image: url('/build/img/bg-wave-06.svg');
+        background-color: unset;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 60rem;
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+       
+        @include m.tablet {
+            @include m.grid(2, 1rem);
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        width: 20rem;
+        margin: 0 auto 2rem auto;
+        @include m.tablet {
+            margin: 0;
+        }
+        @include m.desktop {
+            width: 28rem;
+        }
+    }
+    
+    &__imagen {
+        width: 50%;
+        margin: 0 auto;
+        @include m.tablet {
+            width: 80%;
+        }
+    }
+    
+
+
+
+}
+
